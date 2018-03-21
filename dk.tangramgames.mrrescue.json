@@ -1,0 +1,44 @@
+{
+  "app-id": "dk.tangramgames.mrrescue",
+  "runtime": "org.freedesktop.Platform",
+  "runtime-version": "1.6",
+  "sdk": "org.freedesktop.Sdk",
+  "command": "mrrescue",
+  "base": "org.love2d.BaseApp",
+  "finish-args": [
+    "--device=dri",
+    "--socket=pulseaudio",
+    "--socket=x11",
+    "--socket=wayland"
+  ],
+  "modules": [
+    {
+      "name": "mrrescue",
+      "buildsystem": "simple",
+      "build-commands": [
+        "mv mrrescue /app/bin/mrrescue",
+        "install -Dm644 dk.tangramgames.mrrescue.desktop /app/share/applications/dk.tangramgames.mrrescue.desktop",
+        "install -Dm644 data/splash.png /app/share/icons/hicolor/256x256/apps/dk.tangramgames.mrrescue.png",
+        "zip -r /app/bin/mrrescue.love *"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/SimonLarsen/mrrescue/archive/1.02e.tar.gz",
+          "sha256": "8153d3c69e50d8d5e7fe5441901f01535315929fdde5ad15c885c8332c9bd7ca"
+        },
+        {  
+          "type": "script",
+          "commands":[  
+            "love /app/bin/mrrescue.love"
+          ],
+          "dest-filename":"mrrescue"
+        },
+        {
+          "type": "file",
+          "path": "dk.tangramgames.mrrescue.desktop"
+        }
+      ]
+    }
+  ]
+}
