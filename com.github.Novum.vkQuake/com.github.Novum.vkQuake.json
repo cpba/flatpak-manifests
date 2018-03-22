@@ -8,7 +8,7 @@
     "--device=dri",
     "--socket=pulseaudio",
     "--socket=x11",
-    "--filesystem=home:ro",
+    "--filesystem=home",
     "--socket=wayland"
   ],
   "modules": [
