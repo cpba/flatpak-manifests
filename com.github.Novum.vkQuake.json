@@ -30,10 +30,9 @@
       "name": "vkquake",
       "buildsystem": "simple",
       "build-commands": [
-        "cat readme.md",
         "cd Quake && make",
-        "ls",
-        "pwd"
+        "mkdir /app/bin",
+        "install /run/build/vkquake/Quake/vkquake /app/bin/vkquake"
       ],
       "sources": [
         {
