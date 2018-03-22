@@ -1,0 +1,66 @@
+{
+  "app-id": "com.github.ferreiradaselva.code-edit",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "3.26",
+  "sdk": "org.gnome.Sdk",
+  "command": "code-edit",
+  "finish-args": [
+    "--share=ipc",
+    "--device=dri",
+    "--filesystem=host",
+    "--socket=x11",
+    "--socket=wayland",
+    "--share=network",
+    "--socket=session-bus"
+  ],
+  "modules": [
+    {
+      "name": "gtksourceview",
+      "config-opts": ["--disable-Werror" ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.3.tar.xz",
+          "sha256": "3eed05486a6420c3e2fdda0bbb19a0d905ed09ebf442302a026ab7e574204cbd"
+        }
+      ]
+    },
+    {
+      "name": "libgit2",
+      "buildsystem": "cmake",
+      "config-opts": [ "-DBUILD_SHARED_LIBS:BOOL=ON", "-DTHREADSAFE=ON" ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/libgit2/libgit2.git",
+          "branch": "maint/v0.26"
+        }
+      ]
+    },
+    {
+      "name": "libgit2-glib",
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://git.gnome.org/browse/libgit2-glib",
+          "branch": "v0.26.0"
+        }
+      ]
+    },
+    {
+      "name": "code-edit",
+      "buildsystem": "simple",
+      "build-commands": [
+        "cd src && make",
+        "mkdir /app/bin",
+        "install /run/build/code-edit/src/code-edit /app/bin"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/ferreiradaselva/code-edit.git"
+        }
+      ]
+    }
+  ]
+}
