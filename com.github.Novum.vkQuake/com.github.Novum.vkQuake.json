@@ -3,12 +3,12 @@
   "runtime": "org.freedesktop.Platform",
   "runtime-version": "1.6",
   "sdk": "org.freedesktop.Sdk",
-  "command": "vkquake",
+  "command": "launchvkquake",
   "finish-args": [
     "--device=dri",
     "--socket=pulseaudio",
     "--socket=x11",
-    "--filesystem=home",
+    "--filesystem=~/jocs/vkquake",
     "--socket=wayland"
   ],
   "modules": [
@@ -33,7 +33,8 @@
         "make -C Quake",
         "install -D /run/build/vkquake/Quake/vkquake /app/bin/vkquake",
         "install -D /run/build/vkquake/Misc/vkQuake_512.png /app/share/icons/hicolor/512x512/apps/com.github.Novum.vkQuake.png",
-        "install -D com.github.Novum.vkQuake.desktop /app/share/applications/com.github.Novum.vkQuake.desktop"
+        "install -D com.github.Novum.vkQuake.desktop /app/share/applications/com.github.Novum.vkQuake.desktop",
+        "install -Dm744 launchvkquake /app/bin/launchvkquake"
       ],
       "sources": [
         {
@@ -44,6 +45,13 @@
         {
           "type": "file",
           "path": "com.github.Novum.vkQuake.desktop"
+        },
+        {
+          "type": "script",
+          "commands":[
+            "vkquake -basedir ~/jocs/vkquake"
+          ],
+          "dest-filename":"launchvkquake"
         }
       ]
     }
