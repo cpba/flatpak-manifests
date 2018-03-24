@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=vkQuake
+Comment=Vulkan port of Quake
+Exec=com.github.Novum.vkQuake
+Type=Application
+Categories=Game;
+Terminal=false
+Icon=com.github.Novum.vkQuake

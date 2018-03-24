@@ -32,13 +32,18 @@
       "build-commands": [
         "make -C Quake",
         "install -D /run/build/vkquake/Quake/vkquake /app/bin/vkquake",
-        "install -D /run/build/vkquake/Misc/vkQuake_512.png /app/share/icons/hicolor/512x512/apps/com.github.Novum.vkQuake.png"
+        "install -D /run/build/vkquake/Misc/vkQuake_512.png /app/share/icons/hicolor/512x512/apps/com.github.Novum.vkQuake.png",
+        "install -D com.github.Novum.vkQuake.desktop /app/share/applications/com.github.Novum.vkQuake.desktop"
       ],
       "sources": [
         {
           "type": "archive",
           "url": "https://github.com/Novum/vkQuake/archive/0.97.3.tar.gz",
           "sha256": "0d30b96610761a66cd00f069c489d140435f99bbb8b0ee84e1d4d328b68016dc"
+        },
+        {
+          "type": "file",
+          "path": "com.github.Novum.vkQuake.desktop"
         }
       ]
     }
