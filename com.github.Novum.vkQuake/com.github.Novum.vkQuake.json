@@ -31,8 +31,7 @@
       "buildsystem": "simple",
       "build-commands": [
         "make -C Quake",
-        "mkdir /app/bin",
-        "install /run/build/vkquake/Quake/vkquake /app/bin/vkquake"
+        "install -D /run/build/vkquake/Quake/vkquake /app/bin/vkquake"
       ],
       "sources": [
         {
