@@ -30,7 +30,7 @@
       "name": "vkquake",
       "buildsystem": "simple",
       "build-commands": [
-        "cd Quake && make",
+        "make -C Quake",
         "mkdir /app/bin",
         "install /run/build/vkquake/Quake/vkquake /app/bin/vkquake"
       ],
