@@ -3,12 +3,6 @@
   "runtime": "org.freedesktop.Platform",
   "runtime-version": "1.6",
   "sdk": "org.freedesktop.Sdk",
-  "finish-args": [
-    "--device=dri",
-    "--socket=pulseaudio",
-    "--socket=x11",
-    "--socket=wayland"
-  ],
   "modules": [
     {
       "name": "PhysicsFS",
