@@ -35,7 +35,7 @@ The electron base app does not include nodejs, it is necessary to build it as a 
             {
                 "type": "archive",
                 "url": "https://nodejs.org/dist/v8.11.1/node-v8.11.1.tar.xz",
-                "sha256": "8038fa61ac4562786fcc6d3229f3caa07a864b94bd5922fe75942a38ea1c3a3b"
+                "sha256": "40a6eb51ea37fafcf0cfb58786b15b99152bec672cccf861c14d1cca0ad4758a"
             }
         ]
     }
