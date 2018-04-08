@@ -16,6 +16,12 @@ Also, this repo contains a file electron-quick-start-package-lock.json which was
 
 ## Using the electron base app
 
+Electron applications use some dependencies that aren't included in the freedesktop runtime. Rather than building these, we'll get them from the base app.
+
+Using the base app has many advantages:
+ - Deduplication, by ensuring they are built in the same way, it allows ostree to deduplicate the dependencies. This way users with several electron apps installed won't need to waste hard drive on them.
+ - Decreased build times, as it only needs to be built once.
+
 ## Building nodejs
 
 The electron base app does not include nodejs, it is necessary to build it as a module. This tutorial builds 8.11.1 because it works with most projects at the time of writing, but make sure to use whichever version is best for your project.
