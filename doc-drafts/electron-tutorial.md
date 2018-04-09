@@ -1,18 +1,21 @@
 # Electron tutorial
 
 
-This is a tool to take npm5 package-lock.json lock files and generate flatpak-builder sources for this that let you build the npm-using app in flatpak-builder without network access.
+## Minimal permissions
 
-When you run the tool on the package-lock.json file from the repo, outside the sandbox it will generate a json file with extra sources that will let npm install --offline work.
+At the very least you need:
 
-The included io.atom.electron.ElectronQuickStart.json sample shows how to use this and can be built with:
+    "--share=ipc",
+    "--socket=x11",
+Electron does not currently support wayland.
 
-./flatpak-npm-generator.py electron-quick-start-package-lock.json generated-sources.json
-flatpak-builder --force-clean --repo=repo app io.atom.electron.ElectronQuickStart.json
+If your application plays sound:
 
-Note that this requires io.atom.electron.BaseApp installed. It is available on flathub.
+    "--socket=pulseaudio",
 
-Also, this repo contains a file electron-quick-start-package-lock.json which was created by running npm install in the electron-quick-start. Normally however, such files would be checked in to git.
+If your application accesses the network:
+
+    "--share=network"
 
 ## Using the electron base app
 
