@@ -53,8 +53,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/cpba/electronexampleapp/archive/1.tar.gz",
-                    "sha256": "867c65fff7b56e892eb81bf8187c76ef0289f031427f5a076e92d159232e98eb",
+                    "url": "https://github.com/cpba/electrondemo/archive/electrondemo-1.0.0.tar.gz",
+                    "sha256": "9ebf9174cd88a5028f33d13afa013a59f511aa0fa93154fa1862d3de1fe32610",
                     "dest": "main"
                 },
                 "generated-sources.json",
