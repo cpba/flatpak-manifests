@@ -1,5 +1,27 @@
 # Electron tutorial
 
+This guide builds a simple electron example application hosted at:
+
+https://github.com/cpba/electronexampleapp/
+
+# flatpak-builder method
+
+This will guide you through the process of writing a json manifest to build our example application.
+
+The finished manifest can be found here:
+
+https://github.com/cpba/flatpak-manifests/tree/master/com.github.cpba.electronexampleapp
+
+If you only want to build it and skip the rest of the guide, download the contents of the folder (both files are necessary) and run:
+
+    flatpak-builder build com.github.cpba.electronexampleapp.json --install
+
+If you have added the flathub remote, you may wish to add `--install-deps-from=flathub`
+so that it automatically downloads the necessary build runtime and base app.
+
+Once that's done, test it with:
+
+    flatpak run com.github.cpba.electronexampleapp
 
 ## Minimal permissions
 
@@ -56,7 +78,7 @@ The electron base app does not include nodejs (only its dependencies), it is nec
 
 Note that the cleanup isn't strictly necessary, but removing documentation helps reduce final disk size of the bundle.
 
-## Building your npm dependencies
+## Getting your npm sources
 
 Because npm won't be able to access the network from inside the sandbox, dependencies must be downloaded as sources and installed using `--offline`.
 
@@ -69,3 +91,56 @@ Once you have your `package-lock.json` file, the sources can be generated:
     python3 flatpak-npm-generator.py package-lock.json
 
 This will output a file called `generated-sources.json`, its contents can be directly embedded in your manifest, but it is usually so large that keeping it separate and linking to it is more convenient.
+
+## Building your application
+
+We'll create a new module to build the application. It can be any name, but keep in mind that the module's name is also the directory name used while building as in `/run/build/$name`.
+
+    "name": "electronexampleapp",
+
+We need to add an env variable so that electron-download will find the cached binaries inside the sandbox:
+
+    "build-options" : {
+        "env": {
+            "electron_config_cache": "/run/build/electronexampleapp/npm-cache"
+        }
+    },
+
+We add our sources:
+
+    "sources": [
+
+Our example application:
+
+        {
+            "type": "archive",
+            "url": "https://github.com/cpba/electronexampleapp/archive/1.tar.gz",
+            "sha256": "867c65fff7b56e892eb81bf8187c76ef0289f031427f5a076e92d159232e98eb",
+            "dest": "main"
+        },
+
+`generated-sources.json` is the output of running `flatpak-npm-generator.py` on `package-lock.json`, it contains all our dependencies. Note that for this to work the file must be in the same folder:
+
+        "generated-sources.json",
+
+We also create a simple script so that flatpak will know how to run the app. It could be named anything else, but note that it has to be named in the manifest's `"command":` in order to work:
+
+        {
+            "type": "script",
+            "dest-filename": "run.sh",
+            "commands": [ "npm start --prefix=/app/main" ]
+        }
+    ],
+
+The simple buildsystem doesn't feature any automation, but executes the commands passed in `build-commands`:
+
+    "buildsystem": "simple",
+
+With these we build the app, copy it to `/app/main/` and install our `run.sh` script to `/app/bin/` so that it will be on the `$PATH`:
+
+    "build-commands": [
+        "npm install --prefix=main --offline --cache=/run/build/electronexampleapp/npm-cache/",
+        "mkdir -p /app/main /app/bin",
+        "cp -ra main/* /app/main/",
+        "install run.sh /app/bin/"
+    ]
