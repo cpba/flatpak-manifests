@@ -2,7 +2,7 @@
 
 This guide builds a simple electron example application hosted at:
 
-https://github.com/cpba/electrondemo
+https://github.com/flathub/electron-sample-app
 
 # flatpak-builder method
 
@@ -10,18 +10,18 @@ This will guide you through the process of writing a json manifest to build our 
 
 The finished manifest can be found here:
 
-https://github.com/cpba/flatpak-manifests/tree/master/org.flatpak.electrondemo
+https://github.com/cpba/flatpak-manifests/tree/master/org.flatpak.electron-sample-app
 
 If you only want to build it and skip the rest of the guide, download the contents of the folder (both files are necessary) and run:
 
-    flatpak-builder build org.flatpak.electrondemo.json --install
+    flatpak-builder build org.flatpak.electron-sample-app.json --install
 
 If you have added the flathub remote, you may wish to add `--install-deps-from=flathub`
 so that it automatically downloads the necessary build runtime and base app.
 
 Once that's done, test it with:
 
-    flatpak run org.flatpak.electrondemo
+    flatpak run org.flatpak.electron-sample-app
 
 ## Minimal permissions
 
@@ -96,13 +96,13 @@ This will output a file called `generated-sources.json`, its contents can be dir
 
 We'll create a new module to build the application. It can be any name, but keep in mind that the module's name is also the directory name used while building as in `/run/build/$name`.
 
-    "name": "electrondemo",
+    "name": "electron-sample-app",
 
 We need to add an env variable so that electron-download will find the cached binaries inside the sandbox:
 
     "build-options" : {
         "env": {
-            "electron_config_cache": "/run/build/electrondemo/npm-cache"
+            "electron_config_cache": "/run/build/electron-sample-app/npm-cache"
         }
     },
 
@@ -114,7 +114,7 @@ Our example application:
 
         {
             "type": "archive",
-            "url": "url": "https://github.com/cpba/electrondemo/archive/electrondemo-1.0.0.tar.gz",
+            "url": "url": "https://github.com/flathub/electron-sample-app/archive/electrondemo-1.0.0.tar.gz",
             "sha256": "9ebf9174cd88a5028f33d13afa013a59f511aa0fa93154fa1862d3de1fe32610",
             "dest": "main"
         },
@@ -139,7 +139,7 @@ The simple buildsystem doesn't feature any automation, but executes the commands
 With these we build the app, copy it to `/app/main/` and install our `run.sh` script to `/app/bin/` so that it will be on the `$PATH`:
 
     "build-commands": [
-        "npm install --prefix=main --offline --cache=/run/build/electrondemo/npm-cache/",
+        "npm install --prefix=main --offline --cache=/run/build/electron-sample-app/npm-cache/",
         "mkdir -p /app/main /app/bin",
         "cp -ra main/* /app/main/",
         "install run.sh /app/bin/"

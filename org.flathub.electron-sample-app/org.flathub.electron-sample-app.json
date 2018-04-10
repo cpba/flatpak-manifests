@@ -1,5 +1,5 @@
 {
-    "app-id": "org.flatpak.electrondemo",
+    "app-id": "org.flathub.electron-sample-app",
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "1.6",
     "base": "io.atom.electron.BaseApp",
@@ -42,18 +42,18 @@
             ]
         },
         {
-            "name": "electrondemo",
+            "name": "electron-sample-app",
             "build-options" : {
                 "env": {
                     /* Need this for electron-download to find the cached electron binary */
-                    "electron_config_cache": "/run/build/electrondemo/npm-cache"
+                    "electron_config_cache": "/run/build/electron-sample-app/npm-cache"
                 }
             },
             "buildsystem": "simple",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/cpba/electrondemo/archive/electrondemo-1.0.0.tar.gz",
+                    "url": "https://github.com/flathub/electron-sample-app/archive/electrondemo-1.0.0.tar.gz",
                     "sha256": "9ebf9174cd88a5028f33d13afa013a59f511aa0fa93154fa1862d3de1fe32610",
                     "dest": "main"
                 },
@@ -67,7 +67,7 @@
             ],
             "build-commands": [
                 /* Install npm dependencies */
-                "npm install --prefix=main --offline --cache=/run/build/electrondemo/npm-cache/",
+                "npm install --prefix=main --offline --cache=/run/build/electron-sample-app/npm-cache/",
                 /* Bundle app and dependencies */
                 "mkdir -p /app/main /app/bin",
                 "cp -ra main/* /app/main/",
