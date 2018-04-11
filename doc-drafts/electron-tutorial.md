@@ -10,7 +10,7 @@ This will guide you through the process of writing a json manifest to build our 
 
 The finished manifest can be found here:
 
-https://github.com/cpba/flatpak-manifests/tree/master/org.flatpak.electron-sample-app
+https://github.com/flathub/electron-sample-app/blob/master/flatpak/
 
 If you only want to build it and skip the rest of the guide, download the contents of the folder (both files are necessary) and run:
 
@@ -114,8 +114,8 @@ Our example application:
 
         {
             "type": "archive",
-            "url": "url": "https://github.com/flathub/electron-sample-app/archive/electrondemo-1.0.0.tar.gz",
-            "sha256": "9ebf9174cd88a5028f33d13afa013a59f511aa0fa93154fa1862d3de1fe32610",
+            "url": "https://github.com/flathub/electron-sample-app/archive/1.0.0.tar.gz",
+            "sha256": "221582f14afbe9d723ee1b1737800dcce843a776ebfe8edb5c1e7a1d0d36e7f5",
             "dest": "main"
         },
 
