@@ -52,6 +52,8 @@ Using the base app also has other advantages:
  - Deduplication, by ensuring they are built in the same way, it allows ostree to deduplicate the dependencies. This way users with several electron apps installed won't need to waste hard drive on them.
  - Decreased build times, as it only needs to be built once.
 
+Note that this base app is only intended for projects using electron 1.x.x, projects using electron 2+ must use `org.electronjs.Electron2.BaseApp` which is also available on flathub.
+
 ## Building nodejs
 
 The electron base app does not include nodejs (only its dependencies), it is necessary to build it as a module. This tutorial builds 8.11.1 because it works with most projects at the time of writing, but make sure to use whichever version is best for your project.
