@@ -1,3 +1,7 @@
+An improved version of this guide has been merged into the official documentation here:
+
+http://flatpak.readthedocs.io/en/latest/electron.html
+
 # Electron tutorial
 
 This guide builds a simple electron example application hosted at:
