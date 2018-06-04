@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Horizon Project Manager
+Comment=Free EDA package
+Exec=horizon-prj-mgr
+StartupWMClass=horizon
+Icon=net.carrotIndustries.horizon
+Terminal=false
+Type=Application
+Categories=Development;Electronics;
+X-Desktop-File-Install-Version=0.1
+GenericName=EDA Suite
+Name[de_DE]=Horizon Projekt Manager

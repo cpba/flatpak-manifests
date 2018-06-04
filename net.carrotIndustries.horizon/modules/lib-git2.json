@@ -1,0 +1,14 @@
+{
+	"name": "libgit2",
+	"cmake": true,
+	"config-opts": [ "-DBUILD_SHARED_LIBS:BOOL=ON",
+					"-DTHREADSAFE=ON" 
+	],
+	"sources": [
+		{
+			"type":"git",
+			"url": "https://github.com/libgit2/libgit2.git",
+			"tag": "v0.26.0"
+		}
+	]
+}

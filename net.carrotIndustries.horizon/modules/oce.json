@@ -1,0 +1,18 @@
+{ 
+  "name": "oce", 
+  "modules":[ 
+    "glu-9.0.0.json", 
+    { 
+      "name": "oce01.8", 
+      "buildsystem":"cmake", 
+      "config-opts": ["-DOCE_INSTALL_PREFIX:PATH=/app"], 
+      "sources": [ 
+        { 
+        "type":"git", 
+        "url": "https://github.com/tpaviot/oce.git", 
+        "tag": "OCE-0.18.3" 
+        } 
+      ]  
+    } 
+  ] 
+} 

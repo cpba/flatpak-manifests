@@ -1,0 +1,11 @@
+{
+		"name": "yaml-cpp",
+		"buildsystem": "cmake",
+      	"sources": [
+        	{
+          	"type": "git",
+          	"url": "https://github.com/jbeder/yaml-cpp.git",
+        	"tag": "yaml-cpp-0.6.1"
+        	}
+		]
+    }

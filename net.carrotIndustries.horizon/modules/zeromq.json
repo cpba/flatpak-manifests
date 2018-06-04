@@ -1,0 +1,19 @@
+{ 
+  "name": "zeromq", 
+  "buildsystem":"cmake", 
+  "builddir": true, 
+  "post-install" : [ "cp ../zmq.hpp /app/include/zmq.hpp" ],   
+  "sources": [ 
+    { 
+    "type":"git", 
+    "url": "https://github.com/zeromq/libzmq.git", 
+    "tag": "v4.2.3" 
+    },                                                                           
+    {                                                                            
+      "type": "file",                                                            
+      "url": "https://raw.githubusercontent.com/zeromq/cppzmq/a96e0ded6456757ed74947cec2b5d2b875f9dab4/zmq.hpp", 
+      "dest-filename": "zmq.hpp",                                                
+      "sha256": "99213f47d6ebd02ceb116f757e2e9a4bdc02fb9b2cc5c29b7bb8f529188a3141" 
+    }     
+  ]  
+} 

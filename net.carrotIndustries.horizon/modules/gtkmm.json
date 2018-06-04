@@ -1,0 +1,45 @@
+{
+	"name": "gtkmm",
+	"modules":[
+		{
+			"name": "sigc++-2",
+			"sources": [
+				{
+					"type": "archive",
+					"url": "http://ftp.gnome.org/pub/GNOME/sources/libsigc++/2.10/libsigc++-2.10.0.tar.xz",
+					"sha256": "f843d6346260bfcb4426259e314512b99e296e8ca241d771d21ac64f28298d81"
+				}
+			]
+		},
+		{
+			"name": "sigc++-3",
+			"sources": [
+				{
+					"type": "archive",
+					"url": "http://ftp.gnome.org/pub/GNOME/sources/libsigc++/2.99/libsigc++-2.99.10.tar.xz",
+					"sha256": "68cdb00e39d6b913d22b0ac362312447c8b4014146b8efd2a9299d9916c72260"
+				}
+			]
+		},
+		{
+			"name": "glibmm",
+			"sources": [
+				{
+					"type": "archive",
+					"url": "http://ftp.gnome.org/pub/GNOME/sources/glibmm/2.54/glibmm-2.54.1.tar.xz",
+					"sha256": "7cc28c732b04d70ed34f0c923543129083cfb90580ea4a2b4be5b38802bf6a4a"
+				}
+			]
+		},
+		{
+			"name": "atkmm",
+			"sources": [
+				{
+					"type": "archive",
+					"url": "http://ftp.gnome.org/pub/GNOME/sources/atkmm/2.24/atkmm-2.24.2.tar.xz",
+					"sha256": "ff95385759e2af23828d4056356f25376cfabc41e690ac1df055371537e458bd"
+				}
+			]
+		}
+	]
+}

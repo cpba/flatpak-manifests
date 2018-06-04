@@ -1,0 +1,12 @@
+{
+		"name": "glm",
+		"buildsystem": "cmake",
+    "config-opts" : ["-DCMAKE_INSTALL_LIBDIR=lib"],
+		"sources": [
+			{
+			"type":"git",
+			"url": "https://github.com/g-truc/glm.git",
+			"tag": "0.9.8.5"
+			}
+		]
+	}
