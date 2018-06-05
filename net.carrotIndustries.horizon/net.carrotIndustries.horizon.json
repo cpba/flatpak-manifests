@@ -6,7 +6,7 @@
   "command": "horizon-prj-mgr",
   "finish-args": [
     "--socket=wayland",
-	"--socket=x11",
+    "--socket=x11",
     "--share=network",
     "--device=dri",
     "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
@@ -16,7 +16,7 @@
     "--filesystem=home"],
     "rename-icon":"horizon-eda", /*Image will renamed to match the app-id konvention*/
     "rename-appdata-file": "horizon.appdata.xml",
-	"rename-desktop-file": "net.carrotIndustries.horizon.horizon-pool-mgr.desktop",
+    "rename-desktop-file": "net.carrotIndustries.horizon.horizon-pool-mgr.desktop",
     "modules": [
       "modules/gtkmm.json",
       "modules/yaml_cpp.json",
@@ -41,28 +41,28 @@
           }
         ]
       },
-		{
-			"name": "horizon-files",
-			"buildsystem": "simple",
-			"build-commands" : ["desktop-file-install --dir=/app/share/applications ressources/linux/mime/applications/net.carrotIndustries.horizon.horizon-pool-mgr.desktop",
-								"desktop-file-install --dir=/app/share/applications ressources/linux/mime/applications/net.carrotIndustries.horizon.horizon-prj-mgr.desktop",
-								"install -Dm755 ressources/linux/horizon.appdata.xml /app/share/metainfo/horizon.appdata.xml",
-								"install -Dm755 src/icons/16x16/apps/horizon-eda.png /app/share/icons/hicolor/16x16/apps/horizon-eda.png",
-								"install -Dm755 src/icons/32x32/apps/horizon-eda.png /app/share/icons/hicolor/32x32/apps/horizon-eda.png",
-								"install -Dm755 src/icons/64x64/apps/horizon-eda.png /app/share/icons/hicolor/64x64/apps/horizon-eda.png",
-								"install -Dm755 src/icons/256x256/apps/horizon-eda.png /app/share/icons/hicolor/256x256/apps/horizon-eda.png",
-								"install -Dm755 src/icons/scalable/apps/horizon-eda.svg /app/share/icons/hicolor/scalable/apps/horizon-eda.svg",
-								"install -Dm755 src/icons/scalable/actions/action-link-symbolic.svg /app/share/icons/hicolor/scalable/actions/action-link-symbolic.svg",
-								"install -Dm755 src/icons/scalable/actions/action-unlink-symbolic.svg /app/share/icons/hicolor/scalable/actions/action-unlink-symbolic.svg",
-								"install -Dm755 src/icons/scalable/actions/edit-board-symbolic.svg /app/share/icons/hicolor/scalable/actions/edit-board-symbolic.svg",
-								"install -Dm755 src/icons/scalable/actions/edit-schematic-symbolic.svg /app/share/icons/hicolor/scalable/actions/edit-schematic-symbolic.svg"],
-			"sources": [
-			  {
-				"type": "git",
-				"url": "https://github.com/Murmele/horizon.git",
-				"branch": "flatpak"
-			  }
-        	]
-		}	
+      {
+        "name": "horizon-files",
+        "buildsystem": "simple",
+        "build-commands" : ["desktop-file-install --dir=/app/share/applications ressources/linux/mime/applications/net.carrotIndustries.horizon.horizon-pool-mgr.desktop",
+        "desktop-file-install --dir=/app/share/applications ressources/linux/mime/applications/net.carrotIndustries.horizon.horizon-prj-mgr.desktop",
+        "install -Dm755 ressources/linux/horizon.appdata.xml /app/share/metainfo/horizon.appdata.xml",
+        "install -Dm755 src/icons/16x16/apps/horizon-eda.png /app/share/icons/hicolor/16x16/apps/horizon-eda.png",
+        "install -Dm755 src/icons/32x32/apps/horizon-eda.png /app/share/icons/hicolor/32x32/apps/horizon-eda.png",
+        "install -Dm755 src/icons/64x64/apps/horizon-eda.png /app/share/icons/hicolor/64x64/apps/horizon-eda.png",
+        "install -Dm755 src/icons/256x256/apps/horizon-eda.png /app/share/icons/hicolor/256x256/apps/horizon-eda.png",
+        "install -Dm755 src/icons/scalable/apps/horizon-eda.svg /app/share/icons/hicolor/scalable/apps/horizon-eda.svg",
+        "install -Dm755 src/icons/scalable/actions/action-link-symbolic.svg /app/share/icons/hicolor/scalable/actions/action-link-symbolic.svg",
+        "install -Dm755 src/icons/scalable/actions/action-unlink-symbolic.svg /app/share/icons/hicolor/scalable/actions/action-unlink-symbolic.svg",
+        "install -Dm755 src/icons/scalable/actions/edit-board-symbolic.svg /app/share/icons/hicolor/scalable/actions/edit-board-symbolic.svg",
+        "install -Dm755 src/icons/scalable/actions/edit-schematic-symbolic.svg /app/share/icons/hicolor/scalable/actions/edit-schematic-symbolic.svg"],
+        "sources": [
+          {
+            "type": "git",
+            "url": "https://github.com/Murmele/horizon.git",
+            "branch": "flatpak"
+          }
+        ]
+      }
     ]
 }
