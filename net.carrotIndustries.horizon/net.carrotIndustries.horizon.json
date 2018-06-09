@@ -36,7 +36,7 @@
         "sources": [
           {
             "type": "git",
-            "url": "https://github.com/Murmele/horizon.git",
+            "url": "https://github.com/carrotIndustries/horizon.git",
             "branch": "flatpak"
           }
         ]
@@ -71,7 +71,7 @@
           },
           {
             "type": "git",
-            "url": "https://github.com/Murmele/horizon.git",
+            "url": "https://github.com/carrotIndustries/horizon.git",
             "branch": "flatpak"
           }
         ]
