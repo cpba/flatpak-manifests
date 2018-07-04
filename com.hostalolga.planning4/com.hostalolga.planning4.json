@@ -73,6 +73,7 @@
                      install -d /app/share/icons/hicolor/${icon_size}x${icon_size}/apps
                      rsvg-convert --width=${icon_size} --height=${icon_size} main/icona.svg --format=png --output=/app/share/icons/hicolor/${icon_size}x${icon_size}/apps/com.hostalolga.planning4.png
                  done",
+                "desktop-file-install --dir=/app/share/applications main/com.hostalolga.planning4.desktop",
                 /* Install npm dependencies */
                 "npm install --prefix=main --offline --cache=/run/build/planning4/npm-cache/",
                 /* Bundle app and dependencies */
