@@ -71,7 +71,7 @@
             "build-commands": [
                 "for icon_size in 16 32 48 64 128 256 512; do
                      install -d /app/share/icons/hicolor/${icon_size}x${icon_size}/apps
-                     install -m644 main/icons/${icon_size}x${icon_size}.png /app/share/icons/hicolor/${icon_size}x${icon_size}/apps/com.hostalolga.planning4.png
+                     rsvg-convert --width=${icon_size} --height=${icon_size} main/icona.svg --format=png --output=/app/share/icons/hicolor/${icon_size}x${icon_size}/apps/com.hostalolga.planning4.png
                  done",
                 /* Install npm dependencies */
                 "npm install --prefix=main --offline --cache=/run/build/planning4/npm-cache/",
