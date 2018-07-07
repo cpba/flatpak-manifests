@@ -99,9 +99,11 @@
                      install -d /app/share/icons/hicolor/${icon_size}x${icon_size}/apps
                      rsvg-convert --width=${icon_size} --height=${icon_size} main/icona.svg --format=png --output=/app/share/icons/hicolor/${icon_size}x${icon_size}/apps/com.hostalolga.planning4.png
                  done",
-                 /* Install desktop files and create icons for every year */
+                 /* Install desktop files and launcher scripts */
+                 /* and create icons for every year */
                 "for any in 2013 2014 2015 2016 2017; do
                     desktop-file-install --dir=/app/share/applications main/anys/com.hostalolga.planning4.planning${any}.desktop
+                    install run${any}.sh /app/bin/
                     for icon_size in 16 32 48 64 128 256 512; do
                         install -d /app/share/icons/hicolor/${icon_size}x${icon_size}/apps
                         rsvg-convert --width=${icon_size} --height=${icon_size} main/anys/${any}.svg --format=png --output=/app/share/icons/hicolor/${icon_size}x${icon_size}/apps/com.hostalolga.planning4.planning${any}.png
@@ -114,12 +116,7 @@
                 "mkdir -p /app/main /app/bin",
                 "cp -ra main/* /app/main/",
                 /* Install app wrapper */
-                "install run.sh /app/bin/",
-                "install run2013.sh /app/bin/",
-                "install run2014.sh /app/bin/",
-                "install run2015.sh /app/bin/",
-                "install run2016.sh /app/bin/",
-                "install run2017.sh /app/bin/"
+                "install run.sh /app/bin/"
             ]
         }
     ]
