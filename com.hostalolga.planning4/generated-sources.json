@@ -6,11 +6,11 @@
         "type": "shell"
     },
     {
-        "dest": "npm-cache/_cacache/content-v2/sha512/33/bc",
-        "dest-filename": "7cfb90f593f0ae03a8e18b0b920a613cb1b516245d3062c8dc8a0f56ad7bf0508e40ac4a1405d397a55e0970432b2e9d36fd06c38f0fa423ebd078ac9082",
-        "sha512": "33bc7cfb90f593f0ae03a8e18b0b920a613cb1b516245d3062c8dc8a0f56ad7bf0508e40ac4a1405d397a55e0970432b2e9d36fd06c38f0fa423ebd078ac9082",
+        "dest": "npm-cache/_cacache/content-v2/sha512/f3/b5",
+        "dest-filename": "e40fda835e6f1f21ac7ee72eddaf1f38717b2edf8659a9f07b0a26a5dd0ff69714a827ff8345a59c92409bc4fe35c05488aeb6fddfd561cda3718f8798d7",
+        "sha512": "f3b5e40fda835e6f1f21ac7ee72eddaf1f38717b2edf8659a9f07b0a26a5dd0ff69714a827ff8345a59c92409bc4fe35c05488aeb6fddfd561cda3718f8798d7",
         "type": "file",
-        "url": "https://registry.npmjs.org/@types/node/-/node-8.10.20.tgz"
+        "url": "https://registry.npmjs.org/@types/node/-/node-8.10.21.tgz"
     },
     {
         "dest": "npm-cache/_cacache/content-v2/sha1/73/b5",
@@ -237,53 +237,53 @@
         "url": "https://registry.npmjs.org/ecc-jsbn/-/ecc-jsbn-0.1.1.tgz"
     },
     {
-        "dest": "npm-cache/_cacache/content-v2/sha512/ab/a7",
-        "dest-filename": "67f1bb295fcbbccfab4d5386c46ace99add35abe7ae327a77fa33e3d35be331483eb761f29dbd0058c595201abf2a46c00551fcf8583801b0cd949049255",
-        "sha512": "aba767f1bb295fcbbccfab4d5386c46ace99add35abe7ae327a77fa33e3d35be331483eb761f29dbd0058c595201abf2a46c00551fcf8583801b0cd949049255",
+        "dest": "npm-cache/_cacache/content-v2/sha512/ae/d8",
+        "dest-filename": "3a696d88a567e2c0c464f60aabf9aff13ab165721f6c80b360d142730a6b54504193adb68bc6a00daf7021971f8e0e687f57e59f17b21d1290fbe9b6ecb0",
+        "sha512": "aed83a696d88a567e2c0c464f60aabf9aff13ab165721f6c80b360d142730a6b54504193adb68bc6a00daf7021971f8e0e687f57e59f17b21d1290fbe9b6ecb0",
         "type": "file",
-        "url": "https://registry.npmjs.org/electron/-/electron-1.8.7.tgz"
+        "url": "https://registry.npmjs.org/electron/-/electron-2.0.4.tgz"
     },
     {
         "dest": "npm-cache",
         "only-arches": [
             "i386"
         ],
-        "sha256": "512b6fa30b6261523a7da59d8e938d0638ecaf3b31c1380b152d32a2f3b0b4df",
+        "sha256": "8e464b4033c1cc59d8206140fed5753fd44fa4fa82266cc9264d3009c2671006",
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v1.8.7/electron-v1.8.7-linux-ia32.zip"
+        "url": "https://github.com/electron/electron/releases/download/v2.0.4/electron-v2.0.4-linux-ia32.zip"
     },
     {
         "dest": "npm-cache",
         "only-arches": [
             "x86_64"
         ],
-        "sha256": "6257c668e4b3a823ca68a43d4a0f70fc22ce5fb77cd577974351292de944e8be",
+        "sha256": "cf805b81252586c08ec4a4cbe13ca4aa482e3c805da8c90ce349c7c3cdc89efe",
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v1.8.7/electron-v1.8.7-linux-x64.zip"
+        "url": "https://github.com/electron/electron/releases/download/v2.0.4/electron-v2.0.4-linux-x64.zip"
     },
     {
         "dest": "npm-cache",
         "only-arches": [
             "arm"
         ],
-        "sha256": "1e3d25afac1032f2ff5c4ddd603eba473a539dbe429e99b14692e7686a053fb6",
+        "sha256": "db16a496e14f14e4bee76772bb4992fd849ee4b10aa85770773d7db12ad6bfdb",
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v1.8.7/electron-v1.8.7-linux-arm.zip"
+        "url": "https://github.com/electron/electron/releases/download/v2.0.4/electron-v2.0.4-linux-arm.zip"
     },
     {
         "dest": "npm-cache",
         "only-arches": [
             "aarch64"
         ],
-        "sha256": "133e6709c87d845b5e510384883ca9fbcf9b88c6c3df9b57670dfd447761d746",
+        "sha256": "53cf7dacebf6dfddf2f0d83e05698023644859d70b93b94451b2b5f82a374377",
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v1.8.7/electron-v1.8.7-linux-arm64.zip"
+        "url": "https://github.com/electron/electron/releases/download/v2.0.4/electron-v2.0.4-linux-arm64.zip"
     },
     {
         "dest": "npm-cache",
-        "dest-filename": "SHASUMS256.txt-1.8.7",
+        "dest-filename": "SHASUMS256.txt-2.0.4",
         "type": "file",
-        "url": "data:512b6fa30b6261523a7da59d8e938d0638ecaf3b31c1380b152d32a2f3b0b4df%20%2Aelectron-v1.8.7-linux-ia32.zip%0A6257c668e4b3a823ca68a43d4a0f70fc22ce5fb77cd577974351292de944e8be%20%2Aelectron-v1.8.7-linux-x64.zip%0A1e3d25afac1032f2ff5c4ddd603eba473a539dbe429e99b14692e7686a053fb6%20%2Aelectron-v1.8.7-linux-arm.zip%0A133e6709c87d845b5e510384883ca9fbcf9b88c6c3df9b57670dfd447761d746%20%2Aelectron-v1.8.7-linux-arm64.zip%0A"
+        "url": "data:8e464b4033c1cc59d8206140fed5753fd44fa4fa82266cc9264d3009c2671006%20%2Aelectron-v2.0.4-linux-ia32.zip%0Acf805b81252586c08ec4a4cbe13ca4aa482e3c805da8c90ce349c7c3cdc89efe%20%2Aelectron-v2.0.4-linux-x64.zip%0Adb16a496e14f14e4bee76772bb4992fd849ee4b10aa85770773d7db12ad6bfdb%20%2Aelectron-v2.0.4-linux-arm.zip%0A53cf7dacebf6dfddf2f0d83e05698023644859d70b93b94451b2b5f82a374377%20%2Aelectron-v2.0.4-linux-arm64.zip%0A"
     },
     {
         "dest": "npm-cache/_cacache/content-v2/sha1/2c/fd",
@@ -433,11 +433,11 @@
         "url": "https://registry.npmjs.org/home-path/-/home-path-1.0.6.tgz"
     },
     {
-        "dest": "npm-cache/_cacache/content-v2/sha512/05/ae",
-        "dest-filename": "3ed0ce18bc80d452ca6b3238554d4d7237d176fcb252025ebd669cda2d3e25e23e66c134ba8eaa96f4e8ef8fa94acffbdea8fce9241a866d7b2939be77dc",
-        "sha512": "05ae3ed0ce18bc80d452ca6b3238554d4d7237d176fcb252025ebd669cda2d3e25e23e66c134ba8eaa96f4e8ef8fa94acffbdea8fce9241a866d7b2939be77dc",
+        "dest": "npm-cache/_cacache/content-v2/sha512/ed/3f",
+        "dest-filename": "c1c47d7dcdb7024daf1790c95b2b9953a355ad824162dc6bdd584c8db9ce157b1efff43a9b9e9b1fe0933275c7e3f470a0e335161532f765aea56a9839ff",
+        "sha512": "ed3fc1c47d7dcdb7024daf1790c95b2b9953a355ad824162dc6bdd584c8db9ce157b1efff43a9b9e9b1fe0933275c7e3f470a0e335161532f765aea56a9839ff",
         "type": "file",
-        "url": "https://registry.npmjs.org/hosted-git-info/-/hosted-git-info-2.6.1.tgz"
+        "url": "https://registry.npmjs.org/hosted-git-info/-/hosted-git-info-2.7.1.tgz"
     },
     {
         "dest": "npm-cache/_cacache/content-v2/sha1/9a/ec",
