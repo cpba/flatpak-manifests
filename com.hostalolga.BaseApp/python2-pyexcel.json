@@ -2,7 +2,7 @@
     "name": "python2-pyexcel",
     "buildsystem": "simple",
     "build-commands": [
-        "pip2 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} pyexcel pyexcel-ods pyexcel-xls odfpy fpdf mysql-connector"
+        "pip2 install --no-index --find-links=\"file://${PWD}\" --install-option \"--prefix=${FLATPAK_DEST}\" pyexcel pyexcel-ods pyexcel-xls odfpy fpdf mysql-connector"
     ],
     "sources": [
         {
