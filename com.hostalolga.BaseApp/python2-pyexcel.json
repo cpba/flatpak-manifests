@@ -17,13 +17,13 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/ba/16/ac997890d27d6a78e4bcb379ecd9ce105a0d923f4fefff2eb0c489697da0/texttable-1.2.1.tar.gz",
-            "sha256": "c89dc0148ae29645917aab7e970a30d1af565b3ca276cef8ab1a60469f0d8100"
+            "url": "https://files.pythonhosted.org/packages/4d/35/88cd3b6c9cfe79f98fa52a57843fc6501988b9da13dce1e6a27e1d70d357/texttable-1.4.0.tar.gz",
+            "sha256": "95e8cfe85f8395a7eacdfbc8f09d885b9ef3a6ac6ead0364ea721de1127aa36b"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/7a/bd/62397caea70457d0f0b55e4a5fde8b75e30e05fcaccac6799b1173847d49/pyexcel-io-0.5.6.tar.gz",
-            "sha256": "49f450044926f884fc7405f2217bf079d7d672a37dae8545e5b814e9fb3bb930"
+            "url": "https://files.pythonhosted.org/packages/3d/12/b251d0b002d3d80c803aea318f0c86d6249a38b14528027092a6dab174d3/pyexcel-io-0.5.7.tar.gz",
+            "sha256": "5cf5ccf7750ca130640277f31178b6284a4f9f0f0d1d41f28f419b67ce26132b"
         },
         {
             "type": "file",
@@ -47,13 +47,13 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/4a/9f/873f0e7436e10fd55f1ecf2d84c1771e84d1535a0ebe40daad86f7e14c6b/pyexcel-xls-0.5.6.tar.gz",
-            "sha256": "605c4feac35221bc75fb9929ae7a190d0db8e2a38f8bc19ae75b4f5416c96185"
+            "url": "https://files.pythonhosted.org/packages/b9/ff/4cab9126b9d71a7d0b979e527172db3cacbe6e2de951ee8bc2151a2ac05c/pyexcel-xls-0.5.7.tar.gz",
+            "sha256": "60bba3e80a0aa6af62f8d8a0fdff292b2acba14c047374611986ae572c430a98"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/63/7e/20c52b94444656ee2dd8f823e1508338805e682ca0a2697d7158bc7801b3/pyexcel-ods-0.5.2.tar.gz",
-            "sha256": "7c4ac43faf0bd6607b030e1d4d7c427327c8c442e8ac14f2cc07c2e311816f6d"
+            "url": "https://files.pythonhosted.org/packages/53/fb/08462742a08d8c2a805313367a24630daf13072d91eaa4addd82663a762a/pyexcel-ods-0.5.3.tar.gz",
+            "sha256": "f05bd632b449cc351cccb920212909516481fcf6205945ce04a58c30ffdb7116"
         },
         {
             "type": "file",
