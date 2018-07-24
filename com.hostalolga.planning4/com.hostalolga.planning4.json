@@ -56,7 +56,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "path": "planning4-11.0.0.tar.xz",
+                    "path": "planning4-12.0.0.tar.xz",
                     "sha256": "950a45be6042871213b3594d02c790d74653a57edf4c829271a614921b7768c8",
                     "dest": "main"
                 },
