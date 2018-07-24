@@ -237,53 +237,53 @@
         "url": "https://registry.npmjs.org/ecc-jsbn/-/ecc-jsbn-0.1.1.tgz"
     },
     {
-        "dest": "npm-cache/_cacache/content-v2/sha512/ae/d8",
-        "dest-filename": "3a696d88a567e2c0c464f60aabf9aff13ab165721f6c80b360d142730a6b54504193adb68bc6a00daf7021971f8e0e687f57e59f17b21d1290fbe9b6ecb0",
-        "sha512": "aed83a696d88a567e2c0c464f60aabf9aff13ab165721f6c80b360d142730a6b54504193adb68bc6a00daf7021971f8e0e687f57e59f17b21d1290fbe9b6ecb0",
+        "dest": "npm-cache/_cacache/content-v2/sha512/35/b5",
+        "dest-filename": "ac800bdcc7142b0cd68b0362f969d6532963ba999c02e7bb923d08998858e93b42bab953428c5c916cb9e1abc016ab6b6672ececea61692334179af96751",
+        "sha512": "35b5ac800bdcc7142b0cd68b0362f969d6532963ba999c02e7bb923d08998858e93b42bab953428c5c916cb9e1abc016ab6b6672ececea61692334179af96751",
         "type": "file",
-        "url": "https://registry.npmjs.org/electron/-/electron-2.0.4.tgz"
+        "url": "https://registry.npmjs.org/electron/-/electron-2.0.5.tgz"
     },
     {
         "dest": "npm-cache",
         "only-arches": [
             "i386"
         ],
-        "sha256": "8e464b4033c1cc59d8206140fed5753fd44fa4fa82266cc9264d3009c2671006",
+        "sha256": "49c5479c563189841b3bb4cba38d794bcec07bb7594bcee30039402cf01bbe6e",
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v2.0.4/electron-v2.0.4-linux-ia32.zip"
+        "url": "https://github.com/electron/electron/releases/download/v2.0.5/electron-v2.0.5-linux-ia32.zip"
     },
     {
         "dest": "npm-cache",
         "only-arches": [
             "x86_64"
         ],
-        "sha256": "cf805b81252586c08ec4a4cbe13ca4aa482e3c805da8c90ce349c7c3cdc89efe",
+        "sha256": "ce639f075b8bda55a7379748c85fc373bd7ff72e4e8a50dd681eb757860f1eee",
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v2.0.4/electron-v2.0.4-linux-x64.zip"
+        "url": "https://github.com/electron/electron/releases/download/v2.0.5/electron-v2.0.5-linux-x64.zip"
     },
     {
         "dest": "npm-cache",
         "only-arches": [
             "arm"
         ],
-        "sha256": "db16a496e14f14e4bee76772bb4992fd849ee4b10aa85770773d7db12ad6bfdb",
+        "sha256": "8989946730c6c91ce947f4750501e65264aa98ee26ddb9d091f5f54b30221a35",
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v2.0.4/electron-v2.0.4-linux-arm.zip"
+        "url": "https://github.com/electron/electron/releases/download/v2.0.5/electron-v2.0.5-linux-arm.zip"
     },
     {
         "dest": "npm-cache",
         "only-arches": [
             "aarch64"
         ],
-        "sha256": "53cf7dacebf6dfddf2f0d83e05698023644859d70b93b94451b2b5f82a374377",
+        "sha256": "718f5b547888b1eea70d057b72d64653b2cbb611c499931d52980cd3d38a1a37",
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v2.0.4/electron-v2.0.4-linux-arm64.zip"
+        "url": "https://github.com/electron/electron/releases/download/v2.0.5/electron-v2.0.5-linux-arm64.zip"
     },
     {
         "dest": "npm-cache",
-        "dest-filename": "SHASUMS256.txt-2.0.4",
+        "dest-filename": "SHASUMS256.txt-2.0.5",
         "type": "file",
-        "url": "data:8e464b4033c1cc59d8206140fed5753fd44fa4fa82266cc9264d3009c2671006%20%2Aelectron-v2.0.4-linux-ia32.zip%0Acf805b81252586c08ec4a4cbe13ca4aa482e3c805da8c90ce349c7c3cdc89efe%20%2Aelectron-v2.0.4-linux-x64.zip%0Adb16a496e14f14e4bee76772bb4992fd849ee4b10aa85770773d7db12ad6bfdb%20%2Aelectron-v2.0.4-linux-arm.zip%0A53cf7dacebf6dfddf2f0d83e05698023644859d70b93b94451b2b5f82a374377%20%2Aelectron-v2.0.4-linux-arm64.zip%0A"
+        "url": "data:49c5479c563189841b3bb4cba38d794bcec07bb7594bcee30039402cf01bbe6e%20%2Aelectron-v2.0.5-linux-ia32.zip%0Ace639f075b8bda55a7379748c85fc373bd7ff72e4e8a50dd681eb757860f1eee%20%2Aelectron-v2.0.5-linux-x64.zip%0A8989946730c6c91ce947f4750501e65264aa98ee26ddb9d091f5f54b30221a35%20%2Aelectron-v2.0.5-linux-arm.zip%0A718f5b547888b1eea70d057b72d64653b2cbb611c499931d52980cd3d38a1a37%20%2Aelectron-v2.0.5-linux-arm64.zip%0A"
     },
     {
         "dest": "npm-cache/_cacache/content-v2/sha1/2c/fd",
@@ -307,11 +307,11 @@
         "url": "https://registry.npmjs.org/es6-promise/-/es6-promise-4.2.4.tgz"
     },
     {
-        "dest": "npm-cache/_cacache/content-v2/sha1/a7/55",
-        "dest-filename": "ea7bc1adfcc5a31ce7e762dbaadc5e636444",
-        "sha1": "a755ea7bc1adfcc5a31ce7e762dbaadc5e636444",
+        "dest": "npm-cache/_cacache/content-v2/sha512/7e/3a",
+        "dest-filename": "ae0b9f5c0fb0b25babab3572b4141b9f9197288861bcd304ee3ee8d7e7dd1c0794ed967db4136501e12fd601156a8577df665d8b3604be81074f2088a6fe",
+        "sha512": "7e3aae0b9f5c0fb0b25babab3572b4141b9f9197288861bcd304ee3ee8d7e7dd1c0794ed967db4136501e12fd601156a8577df665d8b3604be81074f2088a6fe",
         "type": "file",
-        "url": "https://registry.npmjs.org/extend/-/extend-3.0.1.tgz"
+        "url": "https://registry.npmjs.org/extend/-/extend-3.0.2.tgz"
     },
     {
         "dest": "npm-cache/_cacache/content-v2/sha1/a8/40",
@@ -608,18 +608,18 @@
         "url": "https://registry.npmjs.org/meow/-/meow-3.7.0.tgz"
     },
     {
-        "dest": "npm-cache/_cacache/content-v2/sha512/04/72",
-        "dest-filename": "7f10aaee348a897ff41a86fc704195caca0390db9ea6c9e37f130f931dc01ae6af8f8f24d330c78d402e03670e40c1fbde96c52b03a07aecd28ca970dbcd",
-        "sha512": "04727f10aaee348a897ff41a86fc704195caca0390db9ea6c9e37f130f931dc01ae6af8f8f24d330c78d402e03670e40c1fbde96c52b03a07aecd28ca970dbcd",
+        "dest": "npm-cache/_cacache/content-v2/sha512/25/64",
+        "dest-filename": "ff21c093b01d08a3702159432346ab9cac748fb127f6c4a2da4657495542e2a2082f909be0819dd55cd35246409d744e83f81508e071086480363a3c08be",
+        "sha512": "2564ff21c093b01d08a3702159432346ab9cac748fb127f6c4a2da4657495542e2a2082f909be0819dd55cd35246409d744e83f81508e071086480363a3c08be",
         "type": "file",
-        "url": "https://registry.npmjs.org/mime-db/-/mime-db-1.33.0.tgz"
+        "url": "https://registry.npmjs.org/mime-db/-/mime-db-1.35.0.tgz"
     },
     {
-        "dest": "npm-cache/_cacache/content-v2/sha512/95/cf",
-        "dest-filename": "da6a19feb78fd2595fea726ba6623ca62ec59f37710b869995b9416382c391aeeb993d54b0010af2abe1c71af3bf488d8a557dba6f1f849fece133c83c85",
-        "sha512": "95cfda6a19feb78fd2595fea726ba6623ca62ec59f37710b869995b9416382c391aeeb993d54b0010af2abe1c71af3bf488d8a557dba6f1f849fece133c83c85",
+        "dest": "npm-cache/_cacache/content-v2/sha512/3f/5b",
+        "dest-filename": "4a60755267ab85a36ea6b67bdee07405137928875516564a7c6140be1120477bde39c564a85ee1c78866ab0ea70467ec21a420e794dc392ce37490ba3eb3",
+        "sha512": "3f5b4a60755267ab85a36ea6b67bdee07405137928875516564a7c6140be1120477bde39c564a85ee1c78866ab0ea70467ec21a420e794dc392ce37490ba3eb3",
         "type": "file",
-        "url": "https://registry.npmjs.org/mime-types/-/mime-types-2.1.18.tgz"
+        "url": "https://registry.npmjs.org/mime-types/-/mime-types-2.1.19.tgz"
     },
     {
         "dest": "npm-cache/_cacache/content-v2/sha512/c8/91",
