@@ -1,0 +1,46 @@
+{
+  "name": "PhysicsFS",
+  "buildsystem": "cmake",
+  "sources": [
+    {
+      "type": "archive",
+      "url": "https://icculus.org/physfs/downloads/physfs-3.0.1.tar.bz2",
+      "sha256": "b77b9f853168d9636a44f75fca372b363106f52d789d18a2f776397bf117f2f1"
+    }
+  ]
+},
+{
+  "name": "libmodplug",
+  "sources": [
+    {
+      "type": "archive",
+      "url": "http://sourceforge.net/projects/modplug-xmms/files/libmodplug/0.8.8.5/libmodplug-0.8.8.5.tar.gz",
+      "sha256": "77462d12ee99476c8645cb5511363e3906b88b33a6b54362b4dbc0f39aa2daad"
+    }
+  ]
+},
+{
+  "name": "luajit",
+  "buildsystem": "simple",
+  "build-commands": [
+    "make",
+    "make install PREFIX=/app"
+  ],
+  "sources": [
+    {
+      "type": "archive",
+      "url": "http://luajit.org/download/LuaJIT-2.0.5.tar.gz",
+      "sha256": "874b1f8297c697821f561f9b73b57ffd419ed8f4278c82e05b48806d30c1e979"
+    }
+  ]
+},
+{
+  "name": "love",
+  "sources": [
+    {
+      "type": "archive",
+      "url": "https://bitbucket.org/rude/love/downloads/love-11.1-linux-src.tar.gz",
+      "sha256": "bc5e9a70021de830f1032d6afe900f0b81902e2b6c610e26cf1d6859bf8e7cde"
+    }
+  ]
+}

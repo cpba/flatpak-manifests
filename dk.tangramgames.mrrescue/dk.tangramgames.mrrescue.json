@@ -4,7 +4,6 @@
   "runtime-version": "1.6",
   "sdk": "org.freedesktop.Sdk",
   "command": "mrrescue",
-  "base": "org.love2d.BaseApp",
   "finish-args": [
     "--device=dri",
     "--socket=pulseaudio",
@@ -12,6 +11,7 @@
     "--socket=wayland"
   ],
   "modules": [
+    "love2d.json",
     {
       "name": "mrrescue",
       "buildsystem": "simple",
@@ -27,9 +27,9 @@
           "url": "https://github.com/SimonLarsen/mrrescue/archive/1.02e.tar.gz",
           "sha256": "8153d3c69e50d8d5e7fe5441901f01535315929fdde5ad15c885c8332c9bd7ca"
         },
-        {  
+        {
           "type": "script",
-          "commands":[  
+          "commands":[
             "love /app/bin/mrrescue.love"
           ],
           "dest-filename":"mrrescue"
