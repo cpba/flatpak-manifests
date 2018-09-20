@@ -68,9 +68,9 @@
       ],
       "sources": [
         {
-          "type": "archive",
-          "url": "https://github.com/SimonLarsen/mrrescue/archive/1.02e.tar.gz",
-          "sha256": "8153d3c69e50d8d5e7fe5441901f01535315929fdde5ad15c885c8332c9bd7ca"
+          "type": "git",
+          "url": "https://github.com/SimonLarsen/mrrescue.git",
+          "commit": "a5be73c60acb8d1be506f7b5e48e784492ba96ce"
         },
         {
           "type": "script",
