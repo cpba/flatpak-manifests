@@ -27,8 +27,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://sourceforge.net/projects/modplug-xmms/files/libmodplug/0.8.8.5/libmodplug-0.8.8.5.tar.gz",
-          "sha256": "77462d12ee99476c8645cb5511363e3906b88b33a6b54362b4dbc0f39aa2daad"
+          "url": "https://sourceforge.net/projects/modplug-xmms/files/libmodplug/0.8.9.0/libmodplug-0.8.9.0.tar.gz",
+          "md5": "5ba16981e6515975e9a68a58d5ba69d1"
         }
       ]
     },
