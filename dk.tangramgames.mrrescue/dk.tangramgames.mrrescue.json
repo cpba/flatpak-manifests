@@ -5,7 +5,7 @@
   "sdk": "org.freedesktop.Sdk",
   "command": "mrrescue",
   "finish-args": [
-    "--device=dri",
+    "--device=all",
     "--socket=pulseaudio",
     "--socket=x11",
     "--socket=wayland"
