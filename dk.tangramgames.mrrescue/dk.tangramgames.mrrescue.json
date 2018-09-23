@@ -23,6 +23,11 @@
     },
     {
       "name": "libmodplug",
+      "cleanup": [
+        "/include",
+        "/lib/pkgconfig",
+        "/lib/*.la"
+      ],
       "sources": [
         {
           "type": "archive",
