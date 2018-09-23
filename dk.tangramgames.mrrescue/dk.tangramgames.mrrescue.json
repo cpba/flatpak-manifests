@@ -47,6 +47,12 @@
       "make-install-args": [
         "PREFIX=/app"
       ],
+      "cleanup": [
+        "/share/man",
+        "/lib/*.a",
+        "/include",
+        "/lib/pkgconfig"
+      ],
       "sources": [
         {
           "type": "archive",
