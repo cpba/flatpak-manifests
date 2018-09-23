@@ -13,6 +13,11 @@
     {
       "name": "PhysicsFS",
       "buildsystem": "cmake-ninja",
+      "cleanup": [
+        "/lib/*.a",
+        "/include",
+        "/lib/pkgconfig"
+      ],
       "sources": [
         {
           "type": "archive",
