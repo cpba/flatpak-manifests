@@ -16,7 +16,8 @@
       "cleanup": [
         "/lib/*.a",
         "/include",
-        "/lib/pkgconfig"
+        "/lib/pkgconfig",
+        "/bin"
       ],
       "sources": [
         {
