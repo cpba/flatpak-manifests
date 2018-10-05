@@ -28,13 +28,14 @@
     },
     {
       "name": "vkquake",
-      "buildsystem": "simple",
+      "subdir": "Quake",
+      "no-autogen": true,
+      "no-make-install": true,
       "build-commands": [
-        "make -C Quake",
         "install -D /run/build/vkquake/Quake/vkquake /app/bin/vkquake",
         "install -D /run/build/vkquake/Misc/vkQuake_512.png /app/share/icons/hicolor/512x512/apps/com.github.Novum.vkQuake.png",
-        "install -D com.github.Novum.vkQuake.desktop /app/share/applications/com.github.Novum.vkQuake.desktop",
-        "install -Dm744 launchvkquake /app/bin/launchvkquake"
+        "install -D ../com.github.Novum.vkQuake.desktop /app/share/applications/com.github.Novum.vkQuake.desktop",
+        "install -Dm744 ../launchvkquake /app/bin/launchvkquake"
       ],
       "sources": [
         {
