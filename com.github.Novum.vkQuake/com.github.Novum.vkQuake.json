@@ -14,6 +14,11 @@
   "modules": [
     {
       "name": "libmad",
+      "cleanup": [
+        "/include",
+        "/lib/*.a",
+        "/lib/*.la"
+      ],
       "sources": [
         {
           "type": "archive",
