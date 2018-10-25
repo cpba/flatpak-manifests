@@ -26,8 +26,9 @@ modules:
   - name: fontmanager
     post-install:
       - "mv /app/share/applications/org.gnome.FontViewer.desktop /app/share/applications/org.gnome.FontManager.FontViewer.desktop"
-      - "install -D data/preferences-desktop-font.svg /app/share/icons/hicolor/scalable/apps/org.gnome.FontManager.FontViewer.svg"
-      - "desktop-file-edit --set-icon=org.gnome.FontManager.FontViewer /app/share/applications/org.gnome.FontManager.FontViewer.desktop"
+      - "install -D data/preferences-desktop-font.svg /app/share/icons/hicolor/scalable/apps/org.gnome.FontManager.svg"
+      - "desktop-file-edit --set-icon=org.gnome.FontManager /app/share/applications/org.gnome.FontManager.desktop"
+      - "desktop-file-edit --set-icon=org.gnome.FontManager /app/share/applications/org.gnome.FontManager.FontViewer.desktop"
     sources:
       - type: archive
         url: https://github.com/FontManager/master/releases/download/0.7.3.1/font-manager-0.7.3.tar.bz2
