@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=melonDS
 Comment=Nintendo DS emulator
-Exec=net.kuribo64.melonds
+Exec=melonDS
 Type=Application
 Categories=Game;
 Terminal=false
