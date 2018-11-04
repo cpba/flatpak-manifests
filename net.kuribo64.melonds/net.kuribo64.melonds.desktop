@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=melonDS
+Comment=Nintendo DS emulator
+Exec=net.kuribo64.melonds
+Type=Application
+Categories=Game;
+Terminal=false
+Icon=net.kuribo64.melonds
