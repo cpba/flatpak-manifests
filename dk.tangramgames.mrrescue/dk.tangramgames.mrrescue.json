@@ -83,13 +83,21 @@
       "name": "mrrescue",
       "buildsystem": "simple",
       "build-commands": [
+        "install -Dm755 apply_extra /app/bin/apply_extra",
         "mv mrrescue /app/bin/mrrescue",
-        "install -Dm644 dk.tangramgames.mrrescue.desktop /app/share/applications/dk.tangramgames.mrrescue.desktop",
-        "install -Dm644 dk.tangramgames.mrrescue.appdata.xml /app/share/metainfo/dk.tangramgames.mrrescue.appdata.xml",
-        "install -Dm644 data/splash.png /app/share/icons/hicolor/256x256/apps/dk.tangramgames.mrrescue.png",
         "zip -r /app/bin/mrrescue.love *"
       ],
       "sources": [
+        {
+          "type": "script",
+          "dest-filename": "apply_extra",
+          "commands": [
+              "tar xf 1.02e.tar.gz",
+              "rm -f 1.02e.tar.gz",
+              "mkdir -p export/share/applications",
+              "install -Dm644 mrrescue-1.02e/data/splash.png export/share/icons/hicolor/256x256/apps/dk.tangramgames.mrrescue.png"
+          ]
+        },
         {
           "type": "git",
           "url": "https://github.com/SimonLarsen/mrrescue.git",
@@ -103,12 +111,11 @@
           "dest-filename":"mrrescue"
         },
         {
-          "type": "file",
-          "path": "dk.tangramgames.mrrescue.desktop"
-        },
-        {
-          "type": "file",
-          "path": "dk.tangramgames.mrrescue.appdata.xml"
+          "type": "extra-data",
+          "filename": "1.02e.tar.gz",
+          "url": "https://github.com/SimonLarsen/mrrescue/archive/1.02e.tar.gz",
+          "sha256": "8153d3c69e50d8d5e7fe5441901f01535315929fdde5ad15c885c8332c9bd7ca",
+          "size": 11886285
         }
       ]
     }
