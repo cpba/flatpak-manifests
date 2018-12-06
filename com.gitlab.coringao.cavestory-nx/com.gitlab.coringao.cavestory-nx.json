@@ -18,7 +18,8 @@
         "install -D cavestory-nx /app/bin/cavestory-nx",
         "cp -R data /app/bin/data",
         "install -Dm644 cavestory-nx.desktop /app/share/applications/com.gitlab.coringao.cavestory-nx.desktop",
-        "install -Dm644 data/cavestory-nx.png /app/share/icons/hicolor/512x512/apps/com.gitlab.coringao.cavestory-nx.png"
+        "install -Dm644 data/cavestory-nx.png /app/share/icons/hicolor/512x512/apps/com.gitlab.coringao.cavestory-nx.png",
+        "install -Dm644 com.gitlab.coringao.cavestory-nx.appdata.xml /app/share/appdata/com.gitlab.coringao.cavestory-nx.appdata.xml"
       ],
       "sources": [
         {
@@ -30,6 +31,10 @@
         {
           "type": "file",
           "path": "cavestory-nx.desktop"
+        },
+        {
+          "type": "file",
+          "path": "com.gitlab.coringao.cavestory-nx.appdata.xml"
         }
       ]
     }
