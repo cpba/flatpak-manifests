@@ -16,3 +16,7 @@ The defaults are defined by the runtime, they are stored at `/etc/flatpak/builde
 It's not a good idea to use them directly.
 
 However, the Sdk extensions include a couple of shell scripts, `install.sh` and `enable.sh` that you can run during build and will copy all the necessary binaries over from the extension to your app bundle.
+
+##Is there a way to change CFLAGS for only a specific arch?
+
+build-options: arch: i368: cflags: ''
