@@ -5,6 +5,7 @@
   "sdk": "org.freedesktop.Sdk",
   "command": "cavestory-nx",
   "finish-args": [
+    "--share=ipc",
     "--device=all",
     "--socket=pulseaudio",
     "--socket=x11",
