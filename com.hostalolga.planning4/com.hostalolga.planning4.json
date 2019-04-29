@@ -96,7 +96,7 @@
                 {
                     "type": "script",
                     "dest-filename": "run2018.sh",
-                    "commands": [ "npm run 2017 --prefix=/app/main" ]
+                    "commands": [ "npm run 2018 --prefix=/app/main" ]
                 }
             ],
             "build-commands": [
