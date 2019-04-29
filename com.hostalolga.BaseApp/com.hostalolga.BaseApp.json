@@ -12,8 +12,8 @@
         {
           "type": "archive",
           /* Sourceforge URLs fail intermitently, get the tarballs from Fedora, check the upstream hashes */
-          "url": "https://src.fedoraproject.org/repo/pkgs/rpms/sip/sip-4.19.16.tar.gz/sha512/6a4e3e8580e914544c9037db61ab9cf05e2460cf2dbdeb67d30c949aa150952d2bb337061f7c7a9222251b04f83a1db1554ff576c3e83b8f60851b442133befa/sip-4.19.16.tar.gz",
-          "sha256": "184c790d58e9527fc6bdac2bbf8638f3d1b41dea922cad8eb83172b4ba70c620"
+          "url": "https://src.fedoraproject.org/repo/pkgs/rpms/sip/sip-4.19.8.tar.gz/sha512/9c0a9722a9a9dd23e2eabe751d622cdd31b376b7987b2c991f5ef4a8d11853c5c6e9f1c24a0d2d864d3990e2a45c2a159ca8511efd4a7e156a14937ef3c680f7/sip-4.19.8.tar.gz",
+          "sha256": "7eaf7a2ea7d4d38a56dd6d2506574464bddf7cf284c960801679942377c297bc"
         },
         {
           "type": "file",
@@ -32,8 +32,8 @@
         {
           "type": "archive",
           /* Sourceforge URLs fail intermitently, get the tarballs from Fedora, check the upstream hashes */
-          "url": "https://src.fedoraproject.org/repo/pkgs/rpms/PyQt4/PyQt4_gpl_x11-4.12.3.tar.gz/sha512/5b50bc7b1f1f1e93db323477745db7bf0f8783f403b6d65d4c0e0f1fc9b8d61c09afa67bea25575bdb3ad40c0bd4d956d27802fc193bc4dc31b993227ba12f22/PyQt4_gpl_x11-4.12.3.tar.gz",
-          "sha256": "a00f5abef240a7b5852b7924fa5fdf5174569525dc076cd368a566619e56d472"
+          "url": "https://src.fedoraproject.org/repo/pkgs/rpms/PyQt4/PyQt4_gpl_x11-4.12.1.tar.gz/sha512/0651816ed5a371c24827e182eac5b2a2afe67928d95a09f63bd8158117aacd3e835b1efa06d4fc0c147a28038613a5bc088bd736a1348de68199da7952299af1/PyQt4_gpl_x11-4.12.1.tar.gz",
+          "sha256": "45d724461ae58b019b9be95076ca07e212eb73084aec9125bb254825c3a05383"
         },
         {
           "type": "file",
