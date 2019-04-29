@@ -92,6 +92,11 @@
                     "type": "script",
                     "dest-filename": "run2017.sh",
                     "commands": [ "npm run 2017 --prefix=/app/main" ]
+                },
+                {
+                    "type": "script",
+                    "dest-filename": "run2018.sh",
+                    "commands": [ "npm run 2017 --prefix=/app/main" ]
                 }
             ],
             "build-commands": [
@@ -101,7 +106,7 @@
                  done",
                  /* Install desktop files and launcher scripts */
                  /* and create icons for every year */
-                "for any in 2013 2014 2015 2016 2017; do
+                "for any in 2013 2014 2015 2016 2017 2018; do
                     desktop-file-install --dir=/app/share/applications main/anys/com.hostalolga.planning4.planning${any}.desktop
                     install run${any}.sh /app/bin/
                     for icon_size in 16 32 48 64 128 256 512; do
