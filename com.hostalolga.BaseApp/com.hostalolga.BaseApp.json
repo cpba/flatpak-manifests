@@ -1,9 +1,10 @@
 {
   "app-id": "com.hostalolga.BaseApp",
   "runtime": "org.freedesktop.Platform",
-  "runtime-version": "1.6",
+  "runtime-version": "19.08",
   "sdk": "org.freedesktop.Sdk",
   "modules": [
+    "shared-modules/python2.7/python-2.7.json",
     "shared-modules/qt4/qt4-4.8.7-minimal.json",
     {
       "name": "sip",
