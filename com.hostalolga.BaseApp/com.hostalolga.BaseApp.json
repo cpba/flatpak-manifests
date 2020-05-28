@@ -57,6 +57,40 @@
           "sha256": "98e91c7c6bf162bf90e4e70fdbc41a8188b9fa8de5ad840c401198014406ce9e"
         }
       ]
+    },
+    {
+      "name": "mysql",
+      "buildsystem": "cmake",
+      "build-options": {
+        "strip": true
+      },
+      "config-opts": [
+        "-DBUILD_CONFIG=mysql_release",
+        "-DWITHOUT_SERVER:BOOL=ON",
+        "-DWITH_AUTHENTICATION_PAM=OFF",
+        "-DIGNORE_AIO_CHECK=ON",
+        "-DCMAKE_INSTALL_PREFIX=/app/clients/mariadb/"
+      ],
+      "cleanup": [
+        "/man",
+        "/include",
+        "/support-files"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "only-arches": [
+            "x86_64"
+          ],
+          "url": "https://github.com/MariaDB/server.git",
+          "tag": "mariadb-10.5.1",
+          "commit": "6dc46b5a4d8aa5432528745be3174267a9caa74d"
+        },
+        {
+            "type": "patch",
+            "path": "disable-pam.patch"
+        }
+      ]
     }
   ]
 }
