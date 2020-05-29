@@ -68,8 +68,7 @@
         "-DBUILD_CONFIG=mysql_release",
         "-DWITHOUT_SERVER:BOOL=ON",
         "-DWITH_AUTHENTICATION_PAM=OFF",
-        "-DIGNORE_AIO_CHECK=ON",
-        "-DCMAKE_INSTALL_PREFIX=/app/clients/mariadb/"
+        "-DIGNORE_AIO_CHECK=ON"
       ],
       "cleanup": [
         "/man",
