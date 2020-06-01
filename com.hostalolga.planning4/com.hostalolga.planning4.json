@@ -39,8 +39,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://nodejs.org/dist/v8.11.3/node-v8.11.3.tar.gz",
-                    "sha256": "0d7e795c0579226c8b197353bbb9392cae802f4fefa4787a2c0e678beaf85cce"
+                    "url": "https://nodejs.org/dist/v12.17.0/node-v12.17.0.tar.gz",
+                    "sha256": "6198f2db36b2c76933d96919dd11e283620c3af2c2b39c2795301bc9c9ee73db"
                 }
             ]
         },
