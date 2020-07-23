@@ -1,0 +1,214 @@
+{
+    "name": "python2-modules",
+    "buildsystem": "simple",
+    "build-commands": [],
+    "modules": [
+        {
+            "name": "python2-pyexcel",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip2 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pyexcel<0.6.0\""
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/ec/b1/8a1c659ce288bf771d5b1c7cae318ada466f73bd0e16df8d86f27a2a3ee7/texttable-1.6.2-py2.py3-none-any.whl",
+                    "sha256": "7dc282a5b22564fe0fdc1c771382d5dd9a54742047c61558e071c8cd595add86"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/5e/da/c07c84c9a11f0c29d328f0eeef267be4c82399b1d39d3c5597bb9f4bc47d/pyexcel-0.5.15-py2.py3-none-any.whl",
+                    "sha256": "7fac067e65567c380933b4d382587a5ce6581d0ad85992f6f0bc7c3f16012184"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/90/e5/eaa5a1c8a9adbac956daa6027789ff13e30362a03cc0d010d88bd867c73f/lml-0.0.9-py2.py3-none-any.whl",
+                    "sha256": "b1bef669dc077a1075fa64b99229b6341085b3b3a98d29c66df1853cc14e6c1a"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/50/96/4fd9f1fac8aae6f4f66609c5520b3611bceb631a52a4f6d00c8c4c440270/pyexcel_io-0.5.20-py2.py3-none-any.whl",
+                    "sha256": "2cba956814e72b66072d97b00ede4a084ad881ce72129088eb0dc3c7f3d670cd"
+                }
+            ]
+        },
+        {
+            "name": "python2-pyexcel-ods",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip2 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pyexcel-ods\""
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/90/e5/eaa5a1c8a9adbac956daa6027789ff13e30362a03cc0d010d88bd867c73f/lml-0.0.9-py2.py3-none-any.whl",
+                    "sha256": "b1bef669dc077a1075fa64b99229b6341085b3b3a98d29c66df1853cc14e6c1a"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/10/8d/b1fa005f55fc3d5fdca476a21c3eff7e3dc5be10f21fb1ba1dc73a3e3872/pyexcel_ods-0.5.6-py2.py3-none-any.whl",
+                    "sha256": "e8d1137da99599e6053c056c21ca601d90f8e000b4db9db679302bbf55d15c0f"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/06/74/9b387472866358ebc08732de3da6dc48e44b0aacd2ddaa5cb85ab7e986a2/defusedxml-0.6.0-py2.py3-none-any.whl",
+                    "sha256": "6687150770438374ab581bb7a1b327a847dd9c5749e396102de3fad4e8a3ef93"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/97/73/8ade73f6749177003f7ce3304f524774adda96e6aaab30ea79fd8fda7934/odfpy-1.4.1.tar.gz",
+                    "sha256": "db766a6e59c5103212f3cc92ec8dd50a0f3a02790233ed0b52148b70d3c438ec"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/50/96/4fd9f1fac8aae6f4f66609c5520b3611bceb631a52a4f6d00c8c4c440270/pyexcel_io-0.5.20-py2.py3-none-any.whl",
+                    "sha256": "2cba956814e72b66072d97b00ede4a084ad881ce72129088eb0dc3c7f3d670cd"
+                }
+            ]
+        },
+        {
+            "name": "python2-pyexcel-xls",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip2 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pyexcel-xls\""
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/74/39/43be0b99c2c0534690a97afa723b6cc39dd5fa4b0e71b865bcc4e1455fc0/pyexcel_xls-0.5.8-py2.py3-none-any.whl",
+                    "sha256": "90aef211c0628e6652943e6ad32e030e7da71d5db0d6e9f443153f8f2985ed2d"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/90/e5/eaa5a1c8a9adbac956daa6027789ff13e30362a03cc0d010d88bd867c73f/lml-0.0.9-py2.py3-none-any.whl",
+                    "sha256": "b1bef669dc077a1075fa64b99229b6341085b3b3a98d29c66df1853cc14e6c1a"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/b0/16/63576a1a001752e34bf8ea62e367997530dc553b689356b9879339cf45a4/xlrd-1.2.0-py2.py3-none-any.whl",
+                    "sha256": "e551fb498759fa3a5384a94ccd4c3c02eb7c00ea424426e212ac0c57be9dfbde"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/50/96/4fd9f1fac8aae6f4f66609c5520b3611bceb631a52a4f6d00c8c4c440270/pyexcel_io-0.5.20-py2.py3-none-any.whl",
+                    "sha256": "2cba956814e72b66072d97b00ede4a084ad881ce72129088eb0dc3c7f3d670cd"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/44/48/def306413b25c3d01753603b1a222a011b8621aed27cd7f89cbc27e6b0f4/xlwt-1.3.0-py2.py3-none-any.whl",
+                    "sha256": "a082260524678ba48a297d922cc385f58278b8aa68741596a87de01a9c628b2e"
+                }
+            ]
+        },
+        {
+            "name": "python2-pyexcel-xlsx",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip2 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pyexcel-xlsx\""
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/f0/da/572cbc0bc582390480bbd7c4e93d14dc46079778ed915b505dc494b37c57/jdcal-1.4.1-py2.py3-none-any.whl",
+                    "sha256": "1abf1305fce18b4e8aa248cf8fe0c56ce2032392bc64bbd61b5dff2a19ec8bba"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/90/e5/eaa5a1c8a9adbac956daa6027789ff13e30362a03cc0d010d88bd867c73f/lml-0.0.9-py2.py3-none-any.whl",
+                    "sha256": "b1bef669dc077a1075fa64b99229b6341085b3b3a98d29c66df1853cc14e6c1a"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/d6/26/eb28e975b7a37aad38d7ec4f7a0f652bdee6ecf36e6bd06f473c5af9b87b/openpyxl-2.6.4.tar.gz",
+                    "sha256": "1d53801678e18d7fe38c116f1ad0c2383a654670c4c8806105b611c92d92f2e3"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/8f/91/8c42e9bafdf8eae9cdb4bb68eb802661b0a90521612a6c7f3fffcb3ebb57/pyexcel_xlsx-0.5.8-py2.py3-none-any.whl",
+                    "sha256": "9bae2820c5767440d8a387695e0f8e8f73c97bcde0a5680c200ae82a2f6d5cc6"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/22/28/a99c42aea746e18382ad9fb36f64c1c1f04216f41797f2f0fa567da11388/et_xmlfile-1.0.1.tar.gz",
+                    "sha256": "614d9722d572f6246302c4491846d2c393c199cfa4edc9af593437691683335b"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/50/96/4fd9f1fac8aae6f4f66609c5520b3611bceb631a52a4f6d00c8c4c440270/pyexcel_io-0.5.20-py2.py3-none-any.whl",
+                    "sha256": "2cba956814e72b66072d97b00ede4a084ad881ce72129088eb0dc3c7f3d670cd"
+                }
+            ]
+        },
+        {
+            "name": "python2-openpyxl",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip2 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"openpyxl<3.0.0\""
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/f0/da/572cbc0bc582390480bbd7c4e93d14dc46079778ed915b505dc494b37c57/jdcal-1.4.1-py2.py3-none-any.whl",
+                    "sha256": "1abf1305fce18b4e8aa248cf8fe0c56ce2032392bc64bbd61b5dff2a19ec8bba"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/22/28/a99c42aea746e18382ad9fb36f64c1c1f04216f41797f2f0fa567da11388/et_xmlfile-1.0.1.tar.gz",
+                    "sha256": "614d9722d572f6246302c4491846d2c393c199cfa4edc9af593437691683335b"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/d6/26/eb28e975b7a37aad38d7ec4f7a0f652bdee6ecf36e6bd06f473c5af9b87b/openpyxl-2.6.4.tar.gz",
+                    "sha256": "1d53801678e18d7fe38c116f1ad0c2383a654670c4c8806105b611c92d92f2e3"
+                }
+            ]
+        },
+        {
+            "name": "python2-odfpy",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip2 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"odfpy\""
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/06/74/9b387472866358ebc08732de3da6dc48e44b0aacd2ddaa5cb85ab7e986a2/defusedxml-0.6.0-py2.py3-none-any.whl",
+                    "sha256": "6687150770438374ab581bb7a1b327a847dd9c5749e396102de3fad4e8a3ef93"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/97/73/8ade73f6749177003f7ce3304f524774adda96e6aaab30ea79fd8fda7934/odfpy-1.4.1.tar.gz",
+                    "sha256": "db766a6e59c5103212f3cc92ec8dd50a0f3a02790233ed0b52148b70d3c438ec"
+                }
+            ]
+        },
+        {
+            "name": "python2-fpdf",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip2 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"fpdf\""
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/37/c6/608a9e6c172bf9124aa687ec8b9f0e8e5d697d59a5f4fad0e2d5ec2a7556/fpdf-1.7.2.tar.gz",
+                    "sha256": "125840783289e7d12552b1e86ab692c37322e7a65b96a99e0ea86cca041b6779"
+                }
+            ]
+        },
+        {
+            "name": "python2-mysql-connector",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip2 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"mysql-connector\""
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/28/04/e40098f3730e75bbe36a338926f566ea803550a34fb50535499f4fc4787a/mysql-connector-2.2.9.tar.gz",
+                    "sha256": "1733e6ce52a049243de3264f1fbc22a852cb35458c4ad739ba88189285efdf32"
+                }
+            ]
+        }
+    ]
+}

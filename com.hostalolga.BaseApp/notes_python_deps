@@ -1,1 +1,1 @@
-python3 flatpak-pip-generator pyexcel pyexcel-ods pyexcel-xls odfpy fpdf mysql-connector
+python3 flatpak-pip-generator pyexcel\<0.6.0 pyexcel-ods pyexcel-xls pyexcel-xlsx openpyxl\<3.0.0 odfpy fpdf mysql-connector
