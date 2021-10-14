@@ -1,15 +1,14 @@
 {
   "app-id": "com.gitlab.coringao.cavestory-nx",
   "runtime": "org.freedesktop.Platform",
-  "runtime-version": "18.08",
+  "runtime-version": "21.08",
   "sdk": "org.freedesktop.Sdk",
   "command": "cavestory-nx",
   "finish-args": [
-    "--share=ipc",
     "--device=all",
     "--socket=pulseaudio",
-    "--socket=x11",
-    "--socket=wayland"
+    "--share=ipc",
+    "--socket=x11"
   ],
   "modules": [
     {
